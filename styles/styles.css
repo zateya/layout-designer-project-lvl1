@@ -1,5 +1,12 @@
 html {
+  box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
 }
 
 .page {
@@ -11,6 +18,8 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   color: #303846;
 }
+
+/* typography */
 
 img {
   max-width: 100%;
@@ -38,55 +47,28 @@ p {
   font-weight: 700;
 }
 
-.button {
-  box-sizing: border-box;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 15px;
-  border: 1px solid #00d3ab;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  font-family: inherit;
-  color: #00d3ab;
-  background: transparent;
-  text-decoration: none;
-  transition: color 0.2s ease, background-color 0.2s ease;
+.text-center {
+  text-align: center;
 }
 
-.button:hover,
-.button:focus {
-  color: #ffffff;
-  background-color: #00d3ab;
-}
+/* containers */
 
-.button:active {
-  opacity: 0.7;
-}
-
-.button-invert {
-  color: #ffffff;
-  border-color: #ffffff;
-}
-
-.button-invert:hover,
-.button-invert:focus {
-  color: #303846;
-  background-color: #ffffff;
-}
-
-.container {
-  box-sizing: border-box;
+.container-fluid {
   width: 100%;
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.container-narrow {
+.container {
+  width: 100%;
   max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
+/* header */
 
 .header {
   position: fixed;
@@ -170,6 +152,8 @@ p {
   opacity: 0.7;
 }
 
+/* content */
+
 .content-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -180,7 +164,6 @@ p {
 }
 
 .intro-section {
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,7 +205,6 @@ p {
 }
 
 .content-columns-item {
-  box-sizing: border-box;
   width: 33.333333%;
   padding: 15px;
 }
@@ -251,4 +233,155 @@ p {
 
 .content-text > :last-child {
   margin-bottom: 0;
+}
+
+.feedback-section {
+  padding-top: 60px;
+  padding-bottom: 83px;
+}
+
+.feedback-container {
+  max-width: 490px;
+}
+
+.feedback-title {
+  margin-top: 0;
+  margin-bottom: 1.2em;
+}
+
+/* forms */
+
+.form-fieldset {
+  padding: 22px 21px 30px;
+  border-color: #09d3ac;
+}
+
+.form-fieldset:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+.form-legend {
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
+  color: #09d3ac;
+}
+
+.form-submit {
+  margin-top: 20px;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-field + .form-field {
+  margin-top: 10px;
+}
+
+.field-column {
+  width: calc((100% - 15px) / 2);
+}
+
+.field-column-short {
+  padding-right: 50px;
+}
+
+.form-label {
+  font-weight: 700;
+}
+
+.field-select {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 8px 10px 7px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: inherit;
+  color: #000000;
+  outline: none;
+}
+
+.field-select:hover,
+.field-select:focus {
+  border-color: #09d3ac;
+}
+
+.field-text {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 5px 15px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: inherit;
+  color: #000000;
+  outline: none;
+}
+
+.field-text:hover,
+.field-text:focus {
+  border-color: #09d3ac;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 160px;
+  min-height: 47px;
+  padding: 10px 15px;
+  border: 1px solid #09d3ac;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+  font-family: inherit;
+  color: #09d3ac;
+  background: transparent;
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  outline: none;
+}
+
+.button:not(:disabled) {
+  cursor: pointer;
+}
+
+.button:not(:disabled):hover,
+.button:focus {
+  color: #ffffff;
+  background-color: #09d3ac;
+}
+
+.button:active {
+  opacity: 0.7;
+}
+
+.button-invert {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.button-invert:not(:disabled):hover,
+.button-invert:focus {
+  color: #303846;
+  background-color: #ffffff;
+}
+
+.button:disabled,
+.button-disabled {
+  color: #cccccc;
+  border-color: #cccccc;
+  pointer-events: none;
 }

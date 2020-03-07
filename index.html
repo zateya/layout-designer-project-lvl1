@@ -12,7 +12,7 @@
 
 <body class="page">
   <header class="header">
-    <div class="header-container container">
+    <div class="header-container container-fluid">
       <a class="page-logo header-logo" href="#">
         <img class="page-logo-img" src="./images/logo.svg" alt="ЖК «Лунное море»">
         <span class="page-logo-title">Лунное море</span>
@@ -33,16 +33,16 @@
   </header>
   <main>
     <section class="intro-section">
-      <div class="intro-container container container-narrow">
+      <div class="intro-container container">
         <img class="intro-logo" src="./images/logo.svg" alt="ЖК «Лунное море»">
-        <h1 class="intro-title h1">ЖК «Лунное море»</h1>
+        <h1 class="intro-title h1">ЖК&nbsp;&laquo;Лунное море&raquo;</h1>
         <p class="intro-text">Место, откуда не хочется улетать</p>
-        <a class="intro-link button button-invert" href="#">Забронировать</a>
+        <a class="intro-link button button-invert" href="#feedback">Забронировать</a>
       </div>
     </section>
 
     <section class="advantages-section content-section" id="advantages">
-      <div class="advantages-container container container-narrow">
+      <div class="advantages-container container">
         <div class="content-columns">
           <div class="content-columns-item content-text">
             <h2 class="h2">Уникальный вид</h2>
@@ -66,10 +66,10 @@
     </section>
 
     <section class="about-section content-section background-section" id="about">
-      <div class="about-container container container-narrow">
+      <div class="about-container container">
         <div class="content-block">
           <div class="content-block-text content-text">
-            <h2 class="h2">О ЖК «Лунное море»</h2>
+            <h2 class="h2">О&nbsp;ЖК&nbsp;&laquo;Лунное море&raquo;</h2>
             <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к&nbsp;тому
               же&nbsp;связь с&nbsp;мегаполисом не&nbsp;теряется&nbsp;&mdash; современные скоростные трассы позволяют без
               труда добираться до столицы и&nbsp;обратно.</p>
@@ -82,7 +82,7 @@
     </section>
 
     <section class="rest-section content-section" id="rest">
-      <div class="rest-container container container-narrow">
+      <div class="rest-container container">
         <div class="content-block">
           <img class="content-block-img" src="./images/moon-2.jpg" alt="Места для отдыха">
           <div class="content-block-text content-text">
@@ -97,12 +97,67 @@
       </div>
     </section>
 
-    <section class="feedback-section background-section">
+    <section class="feedback-section background-section" id="feedback">
       <div class="feedback-container container">
-
+        <h2 class="feedback-title h2 text-center">Оставьте заявку сегодня!</h2>
+        <form class="form feedback-form" action="/" method="POST" autocomplete="off">
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Параметры квартиры</legend>
+            <div class="form-field field-row">
+              <div class="field-column">
+                <label class="form-label" for="rooms">Количество комнат:</label>
+              </div>
+              <div class="field-column field-column-short">
+                <select class="field-select field-column" name="rooms" id="rooms">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field field-row">
+              <div class="field-column">
+                <label class="form-label" for="decoration">Отделка:</label>
+              </div>
+              <div class="field-column field-column-short">
+                <select class="field-select field-column" name="decoration" id="decoration">
+                  <option value="no">Без отделки</option>
+                  <option value="yes">С отделкой</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Контактная информация</legend>
+            <div class="form-field field-row">
+              <div class="field-column">
+                <label class="form-label" for="name">Имя:</label>
+              </div>
+              <div class="field-column">
+                <input class="field-text" type="text" name="name" id="name" required>
+              </div>
+            </div>
+            <div class="form-field field-row">
+              <div class="field-column">
+                <label class="form-label" for="phone">Телефон:</label>
+              </div>
+              <div class="field-column">
+                <input class="field-text" type="tel" name="phone" id="phone" required>
+              </div>
+            </div>
+            <div class="form-field field-row">
+              <div class="field-column">
+                <label class="form-label" for="email">Email:</label>
+              </div>
+              <div class="field-column">
+                <input class="field-text" type="email" name="email" id="email" required>
+              </div>
+            </div>
+          </fieldset>
+          <button class="form-submit button">Отправить</button>
+        </form>
       </div>
     </section>
-
   </main>
   <footer>
     Подвал
