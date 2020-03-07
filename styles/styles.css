@@ -214,26 +214,21 @@ p {
   margin-top: 20px;
 }
 
-.advantages-items {
+.content-columns {
   display: flex;
   flex-wrap: wrap;
   width: calc(100% + 30px);
   margin: -15px;
 }
 
-.advantages-item {
+.content-columns-item {
   box-sizing: border-box;
   width: 33.333333%;
   padding: 15px;
 }
 
-.advantages-title {
-  margin-top: 0;
+.content-columns-item .h2 {
   word-wrap: break-word;
-}
-
-.advantages-text {
-  margin: 0;
 }
 
 .content-block {
@@ -250,10 +245,10 @@ p {
   width: 39%;
 }
 
-.content-block-text > :first-child {
+.content-text > :first-child {
   margin-top: 0;
 }
 
-.content-block-text > :last-child {
+.content-text > :last-child {
   margin-bottom: 0;
 }
