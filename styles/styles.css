@@ -1,15 +1,39 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .page {
-  min-width: 970px;
+  min-width: 960px;
   margin: 0;
   padding-top: 70px;
-  font-size: 15px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
   color: #303846;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .h1 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
   font-size: 50px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 32px;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -48,16 +72,7 @@
 
 .button-invert:hover,
 .button-invert:focus {
-  color: #282828;
-  background-color: #ffffff;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  min-width: 970px;
+  color: #303846;
   background-color: #ffffff;
 }
 
@@ -70,7 +85,17 @@
 }
 
 .container-narrow {
-  max-width: 970px;
+  max-width: 1030px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: 960px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -128,6 +153,7 @@
 }
 
 .main-menu-link {
+  font-size: 15px;
   font-weight: 700;
   color: inherit;
   text-decoration: none;
@@ -144,6 +170,15 @@
   opacity: 0.7;
 }
 
+.content-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.background-section {
+  background-color: #f7f7f7;
+}
+
 .intro-section {
   box-sizing: border-box;
   display: flex;
@@ -153,7 +188,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
-  background: #282828 url(../images/banner.png) no-repeat center 70%;
+  background: #282828 url(../images/intro-background.jpg) no-repeat center 70%;
   background-size: cover;
   text-align: center;
 }
@@ -177,4 +212,48 @@
 
 .intro-link {
   margin-top: 20px;
+}
+
+.advantages-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 30px);
+  margin: -15px;
+}
+
+.advantages-item {
+  box-sizing: border-box;
+  width: 33.333333%;
+  padding: 15px;
+}
+
+.advantages-title {
+  margin-top: 0;
+  word-wrap: break-word;
+}
+
+.advantages-text {
+  margin: 0;
+}
+
+.content-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content-block-text {
+  width: 52%;
+}
+
+.content-block-img {
+  width: 39%;
+}
+
+.content-block-text > :first-child {
+  margin-top: 0;
+}
+
+.content-block-text > :last-child {
+  margin-bottom: 0;
 }
