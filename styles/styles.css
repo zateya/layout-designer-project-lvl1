@@ -154,6 +154,7 @@
   padding-bottom: 30px;
   color: #fff;
   background: #282828 url(../images/banner.png) no-repeat center 70%;
+  background-size: cover;
   text-align: center;
 }
 
