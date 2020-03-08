@@ -140,8 +140,7 @@ p {
 }
 
 .main-menu-link:hover,
-.main-menu-link:focus,
-.main-menu-link-current {
+.main-menu-link:focus {
   color: #f29500;
 }
 
@@ -303,6 +302,7 @@ p {
   line-height: 1.2;
   font-family: inherit;
   color: #000000;
+  background-color: #ffffff;
   outline: none;
 }
 
@@ -322,6 +322,7 @@ p {
   line-height: 1.2;
   font-family: inherit;
   color: #000000;
+  background-color: #ffffff;
   outline: none;
 }
 
@@ -374,13 +375,6 @@ p {
 .button-invert:focus {
   color: #303846;
   background-color: #ffffff;
-}
-
-.button:disabled,
-.button-disabled {
-  color: #cccccc;
-  border-color: #cccccc;
-  pointer-events: none;
 }
 
 /* footer */
