@@ -345,7 +345,7 @@ p {
   font-weight: 700;
   font-family: inherit;
   color: #09d3ac;
-  background: transparent;
+  background-color: transparent;
   text-decoration: none;
   text-align: center;
   transition: color 0.2s ease, background-color 0.2s ease;
