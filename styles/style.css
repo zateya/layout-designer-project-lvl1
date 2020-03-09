@@ -217,11 +217,20 @@ p {
 }
 
 .content-block-text {
-  width: 52%;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.content-block-img + .content-block-text {
+  margin-left: 9%;
 }
 
 .content-block-img {
   width: 39%;
+}
+
+.content-block-text + .content-block-img {
+  margin-left: 9%;
 }
 
 .content-text > :first-child {
