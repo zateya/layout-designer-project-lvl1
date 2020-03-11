@@ -116,7 +116,7 @@ p {
   margin-right: 15px;
 }
 
-.main-menu {
+.menu {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -124,15 +124,15 @@ p {
   list-style: none;
 }
 
-.main-menu-item {
+.menu-item {
   margin-right: 15px;
 }
 
-.main-menu-item:last-child {
+.menu-item:last-child {
   margin-right: 0;
 }
 
-.main-menu-link {
+.menu-link {
   font-size: 15px;
   font-weight: 700;
   color: inherit;
@@ -140,12 +140,12 @@ p {
   transition: color 0.2s ease;
 }
 
-.main-menu-link:hover,
-.main-menu-link:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: #f29500;
 }
 
-.main-menu-link:active {
+.menu-link:active {
   opacity: 0.7;
 }
 
