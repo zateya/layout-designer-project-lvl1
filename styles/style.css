@@ -1,5 +1,9 @@
 /* common and typography */
 
+:root {
+  --header-height: 70px;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -14,7 +18,7 @@ html {
 .page {
   min-width: 960px;
   margin: 0;
-  padding-top: 70px;
+  padding-top: var(--header-height);
   font-size: 16px;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
@@ -76,7 +80,7 @@ p {
   left: 0;
   right: 0;
   min-width: 960px;
-  min-height: 70px;
+  min-height: var(--header-height);
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #ffffff;
@@ -96,6 +100,7 @@ p {
   font-size: 17px;
   font-weight: 700;
   text-decoration: none;
+  white-space: nowrap;
   color: inherit;
   transition: color 0.2s ease;
 }
