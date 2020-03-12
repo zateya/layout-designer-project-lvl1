@@ -1,6 +1,10 @@
 /* common and typography */
 
 :root {
+  --brand-color: #f29500;
+  --accent-color: #09d3ac;
+  --text-color: #303846;
+  --accent-bg-color: #f7f7f7;
   --header-height: 70px;
 }
 
@@ -22,7 +26,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
-  color: #303846;
+  color: var(--text-color);
 }
 
 img {
@@ -49,6 +53,10 @@ p {
   font-size: 32px;
   line-height: 1.2;
   font-weight: 700;
+}
+
+.mr-15 {
+  margin-right: 15px;
 }
 
 .text-center {
@@ -80,7 +88,7 @@ p {
   left: 0;
   right: 0;
   min-width: 960px;
-  min-height: var(--header-height);
+  height: var(--header-height);
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #ffffff;
@@ -107,7 +115,7 @@ p {
 
 .page-logo[href]:hover,
 .page-logo:focus {
-  color: #f29500;
+  color: var(--brand-color);
 }
 
 .page-logo[href]:active {
@@ -129,14 +137,6 @@ p {
   list-style: none;
 }
 
-.menu-item {
-  margin-right: 15px;
-}
-
-.menu-item:last-child {
-  margin-right: 0;
-}
-
 .menu-link {
   font-size: 15px;
   font-weight: 700;
@@ -147,7 +147,7 @@ p {
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #f29500;
+  color: var(--brand-color);
 }
 
 .menu-link:active {
@@ -196,7 +196,7 @@ p {
 }
 
 .background-section {
-  background-color: #f7f7f7;
+  background-color: var(--accent-bg-color);
 }
 
 .content-columns {
@@ -246,16 +246,12 @@ p {
   margin-bottom: 0;
 }
 
-.feedback-section {
-  padding-top: 60px;
-  padding-bottom: 83px;
-}
-
-.feedback-container {
+.form-container {
   max-width: 488px;
+  padding-bottom: 23px;
 }
 
-.feedback-title {
+.form-title {
   margin-top: 0;
   margin-bottom: 1.2em;
 }
@@ -265,7 +261,7 @@ p {
 .form-fieldset {
   margin: 0;
   padding: 22px 22px 30px;
-  border-color: #09d3ac;
+  border-color: var(--accent-color);
 }
 
 .form-fieldset:not(:first-of-type) {
@@ -278,7 +274,7 @@ p {
   font-size: 22px;
   line-height: 1;
   font-weight: 700;
-  color: #09d3ac;
+  color: var(--accent-color);
 }
 
 .form-submit {
@@ -324,7 +320,7 @@ p {
 
 .field-select:hover,
 .field-select:focus {
-  border-color: #09d3ac;
+  border-color: var(--accent-color);
 }
 
 .field-text {
@@ -344,7 +340,7 @@ p {
 
 .field-text:hover,
 .field-text:focus {
-  border-color: #09d3ac;
+  border-color: var(--accent-color);
 }
 
 .button {
@@ -354,13 +350,13 @@ p {
   min-width: 160px;
   min-height: 47px;
   padding: 10px 15px;
-  border: 1px solid #09d3ac;
+  border: 1px solid var(--accent-color);
   border-radius: 10px;
   font-size: 18px;
   line-height: 1.4;
   font-weight: 700;
   font-family: inherit;
-  color: #09d3ac;
+  color: var(--accent-color);
   background-color: transparent;
   text-decoration: none;
   text-align: center;
@@ -375,7 +371,7 @@ p {
 .button:not(:disabled):hover,
 .button:focus {
   color: #ffffff;
-  background-color: #09d3ac;
+  background-color: var(--accent-color);
 }
 
 .button:active {
@@ -389,7 +385,7 @@ p {
 
 .button-invert:not(:disabled):hover,
 .button-invert:focus {
-  color: #303846;
+  color: var(--text-color);
   background-color: #ffffff;
 }
 
@@ -400,7 +396,7 @@ p {
   padding-bottom: 72px;
   font-size: 13px;
   color: #ffffff;
-  background-color: #303846;
+  background-color: var(--text-color);
 }
 
 .footer-container {
@@ -442,5 +438,5 @@ p {
 
 .footer-menu-link:hover,
 .footer-menu-link:focus {
-  color: #f29500;
+  color: var(--brand-color);
 }
