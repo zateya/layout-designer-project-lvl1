@@ -36,7 +36,7 @@ img {
 
 p {
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0;
 }
 
 .h1 {
@@ -55,12 +55,28 @@ p {
   font-weight: 700;
 }
 
-.mr-15 {
-  margin-right: 15px;
-}
-
 .text-center {
   text-align: center;
+}
+
+.break-word {
+  word-wrap: break-word;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.d-block {
+  display: block;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 /* containers */
@@ -123,7 +139,6 @@ p {
 }
 
 .page-logo-img {
-  display: block;
   width: 40px;
   height: 40px;
   margin-right: 15px;
@@ -176,18 +191,9 @@ p {
   margin: 0 auto 15px;
 }
 
-.promo-title {
-  margin: 0;
-}
-
 .promo-text {
-  margin: 0;
   font-size: 18px;
   font-weight: 700;
-}
-
-.promo-link {
-  margin-top: 20px;
 }
 
 .content-section {
@@ -199,51 +205,24 @@ p {
   background-color: var(--accent-bg-color);
 }
 
-.content-columns {
+.columns {
   display: flex;
   flex-wrap: wrap;
   width: calc(100% + 30px);
   margin: -15px;
 }
 
-.content-columns-item {
+.column-3 {
   width: 33.333333%;
   padding: 15px;
 }
 
-.content-columns-item .h2 {
-  word-wrap: break-word;
+.column-text {
+  width: 52%;
 }
 
-.content-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.content-block-text {
-  flex-basis: 0;
-  flex-grow: 1;
-}
-
-.content-block-img + .content-block-text {
-  margin-left: 9%;
-}
-
-.content-block-img {
+.column-img {
   width: 39%;
-}
-
-.content-block-text + .content-block-img {
-  margin-left: 9%;
-}
-
-.content-text > :first-child {
-  margin-top: 0;
-}
-
-.content-text > :last-child {
-  margin-bottom: 0;
 }
 
 .form-container {
@@ -264,10 +243,6 @@ p {
   border-color: var(--accent-color);
 }
 
-.form-fieldset:not(:first-of-type) {
-  margin-top: 20px;
-}
-
 .form-legend {
   padding-left: 3px;
   padding-right: 3px;
@@ -277,18 +252,10 @@ p {
   color: var(--accent-color);
 }
 
-.form-submit {
-  margin-top: 20px;
-}
-
 .field-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.form-field + .form-field {
-  margin-top: 10px;
 }
 
 .field-column {
@@ -297,10 +264,6 @@ p {
 
 .field-column-short {
   padding-right: 50px;
-}
-
-.form-label {
-  font-weight: 700;
 }
 
 .field-select {
@@ -439,4 +402,26 @@ p {
 .footer-menu-link:hover,
 .footer-menu-link:focus {
   color: var(--brand-color);
+}
+
+/* resets */
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mr-15 {
+  margin-right: 15px;
 }

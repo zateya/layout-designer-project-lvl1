@@ -35,29 +35,29 @@
     <section class="promo-section">
       <div class="container">
         <img class="promo-logo" src="./images/logo.svg" width="170" height="170" alt="ЖК «Лунное море»">
-        <h1 class="promo-title h1">ЖК&nbsp;&laquo;Лунное море&raquo;</h1>
-        <p class="promo-text">Место, откуда не хочется улетать</p>
-        <a class="promo-link button button-invert" href="#feedback">Забронировать</a>
+        <h1 class="h1 m-0">ЖК&nbsp;&laquo;Лунное море&raquo;</h1>
+        <p class="promo-text m-0">Место, откуда не хочется улетать</p>
+        <a class="button button-invert mt-20" href="#feedback">Забронировать</a>
       </div>
     </section>
 
     <section class="content-section" id="advantages">
       <div class="container">
-        <div class="content-columns">
-          <div class="content-columns-item content-text">
-            <h2 class="h2">Уникальный вид</h2>
+        <div class="columns">
+          <div class="column-3">
+            <h2 class="h2 mt-0 break-word">Уникальный вид</h2>
             <p>Вид на&nbsp;космос из&nbsp;вашего окна. Мы&nbsp;построили дома с&nbsp;большими
               окнами, чтобы вы&nbsp;могли наслаждаться метеоритными потоками.</p>
           </div>
-          <div class="content-columns-item content-text">
-            <h2 class="h2">Инфраструктура</h2>
+          <div class="column-3">
+            <h2 class="h2 mt-0 break-word">Инфраструктура</h2>
             <p>Прекрасные дороги рядом с&nbsp;домом. Много мест для прогулки. Всего
               в&nbsp;200&nbsp;км.&nbsp;от посёлка находится кольцо гор Кордильеры, на&nbsp;которых вы&nbsp;сможете
               провести незабываемые выходные.
             </p>
           </div>
-          <div class="content-columns-item content-text">
-            <h2 class="h2">Близость к&nbsp;Москве</h2>
+          <div class="column-3">
+            <h2 class="h2 mt-0 break-word">Близость к&nbsp;Москве</h2>
             <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы
               в самом сердце России.</p>
           </div>
@@ -66,24 +66,28 @@
     </section>
 
     <section class="content-section background-section" id="about">
-      <div class="content-block container">
-        <div class="content-block-text content-text">
-          <h2 class="h2">О&nbsp;ЖК&nbsp;&laquo;Лунное море&raquo;</h2>
+      <div class="container d-flex justify-content-between">
+        <div class="column-text">
+          <h2 class="h2 mt-0">О&nbsp;ЖК&nbsp;&laquo;Лунное море&raquo;</h2>
           <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к&nbsp;тому
             же&nbsp;связь с&nbsp;мегаполисом не&nbsp;теряется&nbsp;&mdash; современные скоростные трассы позволяют без
             труда добираться до столицы и&nbsp;обратно.</p>
           <p>Мы&nbsp;построили наши дома на&nbsp;самом близком к&nbsp;Солнцу спутнике, всего в&nbsp;380 тысяч
             километров от&nbsp;Земли.</p>
         </div>
-        <img class="content-block-img" src="./images/moon-1.jpg" width="390" height="260" alt="О ЖК «Лунное море»">
+        <div class="column-img">
+          <img class="d-block" src="./images/moon-1.jpg" width="390" height="260" alt="О ЖК «Лунное море»">
+        </div>
       </div>
     </section>
 
     <section class="content-section" id="rest">
-      <div class="content-block container">
-        <img class="content-block-img" src="./images/moon-2.jpg" alt="Места для отдыха">
-        <div class="content-block-text content-text">
-          <h2 class="h2">Места для отдыха</h2>
+      <div class="container d-flex justify-content-between">
+        <div class="column-img">
+          <img class="d-block" src="./images/moon-2.jpg" alt="Места для отдыха">
+        </div>
+        <div class="column-text">
+          <h2 class="h2 mt-0">Места для отдыха</h2>
           <p>Луна обладает всеми условиями для комфортного отдыха от&nbsp;большого города. В&nbsp;вашем распоряжении
             22&nbsp;моря и 18&nbsp;гор. Самое ближайшее кольцо гор всего в&nbsp;200 километров от&nbsp;вашей квартиры.
           </p>
@@ -100,9 +104,9 @@
         <form class="form" action="/" method="POST" autocomplete="off" id="feedback-form">
           <fieldset class="form-fieldset">
             <legend class="form-legend">Параметры квартиры</legend>
-            <div class="form-field field-row">
+            <div class="field-row">
               <div class="field-column">
-                <label class="form-label" for="rooms">Количество комнат:</label>
+                <label class="bold" for="rooms">Количество комнат:</label>
               </div>
               <div class="field-column field-column-short">
                 <select class="field-select" name="rooms" id="rooms">
@@ -112,9 +116,9 @@
                 </select>
               </div>
             </div>
-            <div class="form-field field-row">
+            <div class="field-row mt-10">
               <div class="field-column">
-                <label class="form-label" for="decoration">Отделка:</label>
+                <label class="bold" for="decoration">Отделка:</label>
               </div>
               <div class="field-column field-column-short">
                 <select class="field-select" name="decoration" id="decoration">
@@ -125,27 +129,27 @@
             </div>
           </fieldset>
 
-          <fieldset class="form-fieldset">
+          <fieldset class="form-fieldset mt-20">
             <legend class="form-legend">Контактная информация</legend>
-            <div class="form-field field-row">
+            <div class="field-row">
               <div class="field-column">
-                <label class="form-label" for="name">Имя:</label>
+                <label class="bold" for="name">Имя:</label>
               </div>
               <div class="field-column">
                 <input class="field-text" type="text" name="name" id="name" required>
               </div>
             </div>
-            <div class="form-field field-row">
+            <div class="field-row mt-10">
               <div class="field-column">
-                <label class="form-label" for="phone">Телефон:</label>
+                <label class="bold" for="phone">Телефон:</label>
               </div>
               <div class="field-column">
                 <input class="field-text" type="tel" name="phone" id="phone" required>
               </div>
             </div>
-            <div class="form-field field-row">
+            <div class="field-row mt-10">
               <div class="field-column">
-                <label class="form-label" for="email">Email:</label>
+                <label class="bold" for="email">Email:</label>
               </div>
               <div class="field-column">
                 <input class="field-text" type="email" name="email" id="email" required>
@@ -153,14 +157,14 @@
             </div>
           </fieldset>
 
-          <button class="form-submit button">Отправить</button>
+          <button class="button mt-20">Отправить</button>
         </form>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer-container container">
-      <div class="footer-column">
+      <div>
         <span class="page-logo footer-logo">
           <img class="page-logo-img footer-logo-img" src="./images/logo.svg" alt="ЖК «Лунное море»">
           Лунное море
@@ -168,7 +172,7 @@
         <p class="footer-copyright">&copy; 2032 год</p>
       </div>
 
-      <div class="footer-column">
+      <div>
         <h2 class="footer-title">Проектная документация</h2>
         <ul class="footer-menu">
           <li>
@@ -180,7 +184,7 @@
         </ul>
       </div>
 
-      <div class="footer-column">
+      <div>
         <h2 class="footer-title">О застройщике</h2>
         <ul class="footer-menu">
           <li>
