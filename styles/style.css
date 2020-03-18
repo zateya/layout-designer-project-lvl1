@@ -5,6 +5,7 @@
   --accent-color: #09d3ac;
   --text-color: #303846;
   --accent-bg-color: #f7f7f7;
+  --min-desktop-width: 960px;
   --header-height: 70px;
 }
 
@@ -20,7 +21,7 @@ html {
 }
 
 .page {
-  min-width: 960px;
+  min-width: var(--min-desktop-width);
   margin: 0;
   padding-top: var(--header-height);
   font-size: 16px;
@@ -103,7 +104,7 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  min-width: 960px;
+  min-width: var(--min-desktop-width);
   height: var(--header-height);
   padding-top: 15px;
   padding-bottom: 15px;
@@ -217,14 +218,6 @@ p {
   padding: 15px;
 }
 
-.column-text {
-  width: 52%;
-}
-
-.column-img {
-  width: 39%;
-}
-
 .form-container {
   max-width: 488px;
   padding-bottom: 23px;
@@ -240,6 +233,9 @@ p {
 .form-fieldset {
   margin: 0;
   padding: 22px 22px 30px;
+}
+
+.form-accent .form-fieldset {
   border-color: var(--accent-color);
 }
 
@@ -249,6 +245,9 @@ p {
   font-size: 22px;
   line-height: 1;
   font-weight: 700;
+}
+
+.form-accent .form-legend {
   color: var(--accent-color);
 }
 
@@ -281,8 +280,8 @@ p {
   outline: none;
 }
 
-.field-select:hover,
-.field-select:focus {
+.form-accent .field-select:hover,
+.form-accent .field-select:focus {
   border-color: var(--accent-color);
 }
 
@@ -301,8 +300,8 @@ p {
   outline: none;
 }
 
-.field-text:hover,
-.field-text:focus {
+.form-accent .field-text:hover,
+.form-accent .field-text:focus {
   border-color: var(--accent-color);
 }
 
@@ -313,13 +312,13 @@ p {
   min-width: 160px;
   min-height: 47px;
   padding: 10px 15px;
-  border: 1px solid var(--accent-color);
+  border-width: 1px;
+  border-style: solid;
   border-radius: 10px;
   font-size: 18px;
   line-height: 1.4;
   font-weight: 700;
   font-family: inherit;
-  color: var(--accent-color);
   background-color: transparent;
   text-decoration: none;
   text-align: center;
@@ -331,13 +330,18 @@ p {
   cursor: pointer;
 }
 
-.button:not(:disabled):hover,
-.button:focus {
+.button-accent {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.button-accent:not(:disabled):hover,
+.button-accent:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
 
-.button:active {
+.button-accent:active {
   opacity: 0.7;
 }
 
@@ -350,6 +354,10 @@ p {
 .button-invert:focus {
   color: var(--text-color);
   background-color: #ffffff;
+}
+
+.button-invert:active {
+  opacity: 0.9;
 }
 
 /* footer */
@@ -401,6 +409,14 @@ p {
 }
 
 /* resets */
+
+.w-50 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
 
 .m-0 {
   margin: 0;
